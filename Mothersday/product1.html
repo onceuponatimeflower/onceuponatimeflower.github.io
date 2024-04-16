@@ -220,14 +220,13 @@
             overflow-x: hidden; /* 禁止左右滑动 */
             }
 
-            .buytoknow{
-                padding-left:15px;
+            .buytoknow, .buymethod{
+                padding-left:30px;
                 font-weight: bold;
             }
 
-            .buymethod{
-                padding-left:15px;
-                font-weight: bold;
+            .buytoknw_detail, .buymethod_detail{
+                margin-left:15px;
             }
 
             /* 回頂部 */
@@ -362,11 +361,11 @@
                             <span id="productSize" style="display: block; font-size: 14px; line-height: 1.7">100*60cm</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productInfo" class="form-label" style="font-size: 16px;">商品內容</label>
+                            <label for="productInfo" class="form-label" style="font-size: 16px">商品內容</label>
                             <span id="productInfo" style="display: block; font-size: 14px; line-height: 1.7">康乃馨 * 3（焦糖/淺杏/深杏）<br>＊顏色不指定，可選混搭或同色<br>玻璃花瓶 * 1（款式隨機）<br>母親節小卡 * 1<br>透明櫥窗提袋 * 1</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productPrice" class="form-label" style="font-size: 16px;">價格</label>
+                            <label for="productPrice" class="form-label" style="font-size: 16px">價格</label>
                             <NT id="productPrice" style="display: block; font-size: 14px; line-height: 1.7">NT$1,500</NT>
                         </div>
                     </form>
@@ -376,7 +375,7 @@
         <div class="Product2_form mt-5">
             <div class="mb-2 row mx-auto justify-content-center">
                 <div class="col-lg-2 col-3">
-                    <label for="customer" style="padding-top:12px; font-weight: normal" class="form-label">訂購人</label>
+                    <label for="customer" style="padding-top:12px; font-weight: normal; font-size: 16px" class="form-label">訂購人</label>
                 </div>
                 <div class="col-8" style="display: flex">
                     <input class="form-control me-2" id="name" name="name" placeholder="Name" type="text" required>
