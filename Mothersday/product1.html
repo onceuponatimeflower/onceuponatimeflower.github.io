@@ -350,7 +350,7 @@
                         <div class="swiper-pagination swiper-pagination-1"></div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-6 col-sm-5 col-8 d-flex ">
                     <!-- 產品清單 -->
                     <form id="product_information">
                         <div class="mb-3">
@@ -391,19 +391,17 @@
                     <input class="form-control" id="date_time" name="date_time" type="datetime-local" required>
                 </div>
             </div>
+            
             <div class="mb-2 row mx-auto justify-content-center">
                 <div class="col-lg-2 col-3">
-                    <label for="note" style="padding-top:12px; font-weight: normal" class="form-label">其他需求</label>
+                    <label for="product_color" style="padding-top:12px; font-weight: normal" class="form-label">顏色 數量</label>
                 </div>
                 <div class="col-8" style="display: flex">
-                    <input class="form-control" id="note" name="note" placeholder="Note" type="text">
-                </div>
-            </div>
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3">
-                    <label for="quantity" style="padding-top:12px; font-weight: normal" class="form-label">數量</label>
-                </div>
-                <div class="col-8" style="display: flex">
+                    <select class="form-select me-2" id="product_color" name="product_color">
+                        <option selected>--</option>
+                        <option value="same_color">同色</option>
+                        <option value="mixed_color">混搭</option>
+                    </select>
                     <select class="form-select" id="quantity" name="quantity">
                         <option selected>--</option>
                         <option value="1">1</option>
@@ -412,6 +410,15 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
+                </div>
+            </div>
+
+            <div class="mb-2 row mx-auto justify-content-center">
+                <div class="col-lg-2 col-3">
+                    <label for="note" style="padding-top:12px; font-weight: normal" class="form-label">備註</label>
+                </div>
+                <div class="col-8" style="display: flex">
+                    <input class="form-control" id="note" name="note" placeholder="Note" type="text">
                 </div>
             </div>
             <button class="btn col-lg-3 col-4" type="submit" id="submitButton">訂購送出</button>
