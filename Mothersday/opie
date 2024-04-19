@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在系統瀏覽器中打開連結</title>
+</head>
+<body>
+    <button onclick="openInExternalBrowser()">在系統瀏覽器中打開連結</button>
+
+    <script>
+        function openInExternalBrowser() {
+            // 替換以下 URL 為你想要跳轉的網頁地址
+            var url = "https://onceuponatimeflower.github.io/Mothersday/vase.html";
+
+            // 彈出提示
+            alert("請複製下面的連結並在系統瀏覽器中打開：\n" + url);
+        }
+    </script>
+</body>
+</html>
