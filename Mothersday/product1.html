@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="icon" href="https://drive.google.com/thumbnail?id=18eNC-ePh0NZBgCx53VRAY2mRgAc5iHlC&sz=s4000" type="image/jpg">
-        <title>Mother's Day 康乃馨花瓶提袋組</title>
+        <title>Mother's Day 焦糖康單體</title>
         <meta name="description" content="從前從前 FLOWER STUDIO">
         <meta name="keywords" content="從前從前工作室,從前從前花店,從前從前花材,從前從前,台南花店,LM花店,南科花店,善化花店,新市花店,乾燥花課程,永生花課程,永生花,週花,鮮花週花,週花訂閱,花店送花,花店訂花,開幕花禮,花束,桌花,送花,婚禮佈置">
         <meta charset="UTF-8">
@@ -156,14 +156,9 @@
             background: rgba(0, 0, 0, 0.5);
             }
 
-            #Product2_form {
+            #Product1_form {
             margin: auto;
             text-align: center;
-            align-items: center;
-            }
-
-            #product_information{
-            margin: auto;
             }
 
             .form-label{
@@ -173,8 +168,7 @@
             .btn{
             background-color:rgb(193, 171, 148);
             color:rgb(84, 84, 84);
-            margin: 0 auto; /* 自動置中 */
-            width: 100%;
+            margin: 20px 0px 20px 0px;
             }
 
             .btn:hover {
@@ -219,13 +213,14 @@
             overflow-x: hidden; /* 禁止左右滑动 */
             }
 
-            .buytoknow, .buymethod{
-                padding-left:30px;
+            .buytoknow{
+                padding-left:15px;
                 font-weight: bold;
             }
 
-            .buytoknw_detail, .buymethod_detail{
-                margin-left:15px;
+            .buymethod{
+                padding-left:15px;
+                font-weight: bold;
             }
 
             /* 回頂部 */
@@ -307,16 +302,16 @@
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">單支康乃馨</a>
+                            <a class="nav-link" href="vase.html">Mother's Day 鮮花</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">康乃馨花瓶提袋組</a>
+                            <a class="nav-link" href="ecarnation.html">Mother's Day 永生花</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">康乃馨永生花</a>
+                            <a class="nav-link" href="#">Mother's Day 客製化</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">康乃馨手提花盒</a>
+                            <a class="nav-link" href="#">客製化</a>
                         </li>
                     </ul>
                 </div>
@@ -348,93 +343,59 @@
                         <div class="swiper-pagination swiper-pagination-1"></div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-9 d-flex ">
+                <div class="col-lg-6 d-flex align-items-center">
                     <!-- 產品清單 -->
-                    <form id="product_information" style="padding-left: 10px">
+                    <form id="Product1_form">
                         <div class="mb-3">
-                            <label for="productName" class="form-label" style="font-size: 16px">康乃馨花瓶提袋組</label>
-                            <span id="productName" style="display: block; font-size: 14px; line-height: 1.7">擺在餐桌上和最愛的媽媽一起用餐<br>瓶器可重複使用，節日之後讓浪漫延續。</span>
+                            <label for="productName" class="form-label">產品名稱</label>
+                            <span id="productName" style="display: block">這裡填入產品介紹</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productSize" class="form-label" style="font-size: 16px;">尺寸</label>
-                            <span id="productSize" style="display: block; font-size: 14px; line-height: 1.7">100*60cm</span>
+                            <label for="productSize" class="form-label">尺寸</label>
+                            <span id="productSize" style="display: block">這裡填入尺寸</span>
                         </div>
                         <div class="mb-3">
-                            <label for="productInfo" class="form-label" style="font-size: 16px">商品內容</label>
-                            <span id="productInfo" style="display: block; font-size: 14px; line-height: 1.7">康乃馨 * 3（焦糖/淺杏/深杏）<br>＊顏色不指定，可選混搭或同色<br>玻璃花瓶 * 1（款式隨機）<br>母親節小卡 * 1<br>透明櫥窗提袋 * 1</span>
+                            <label for="productPrice" class="form-label">價格</label>
+                            <NT id="productPrice" style="display: block">NT$1,500</NT>
                         </div>
-                        <div class="mb-3">
-                            <label for="productPrice" class="form-label" style="font-size: 16px">價格</label>
-                            <NT id="productPrice" style="display: block; font-size: 14px; line-height: 1.7">NT$1,500</NT>
+                        <div class="col mb-2" style="display: flex; align-items: center;">
+                            <label for="customer" style="padding-top:10px; font-weight: normal" class="form-label col-3">訂購人</label>
+                            <input class="form-control me-2" id="name" name="name" placeholder="Name" type="text" required>
+                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="tel" pattern="[0-9]{10}" required>
                         </div>
+                        <div class="col mb-2" style="display: flex; align-items: center;">
+                            <label for="date_time" style="padding-top:10px; font-weight: normal" class="form-label col-3">取貨時間</label>
+                            <input class="form-control" id="date_time" name="date_time" type="datetime-local" required>
+                        </div>
+                        <div class="col mb-2" style="display: flex; align-items: center;">
+                            <label for="note" style="padding-top:10px; font-weight: normal" class="form-label col-3">其他需求</label>
+                            <input class="form-control" id="note" name="note" placeholder="Note" type="text">
+                        </div>
+                        <div class="col mb-1" style="display: flex; align-items: center;">
+                            <label for="quantity" style="padding-top:10px; font-weight: normal" class="form-label col-3">數量</label>
+                            <select class="form-select" id="quantity" name="quantity">
+                                <option selected>--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <button class="btn col-sm-10" type="submit" id="submitButton">訂購送出</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="Product2_form mt-5">
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3">
-                    <label for="customer" style="padding-top:12px; font-weight: normal; font-size: 16px" class="form-label">訂購人</label>
-                </div>
-                <div class="col-8" style="display: flex">
-                    <input class="form-control me-2" id="name" name="name" placeholder="Name" type="text" required>
-                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="tel" pattern="[0-9]{10}" required>
-                </div>
-            </div>
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3">
-                    <label for="date_time" style="padding-top:12px; font-weight: normal" class="form-label">取貨時間</label>
-                </div>
-                <div class="col-8" style="display: flex">
-                    <input class="form-control" id="date_time" name="date_time" type="datetime-local" required>
-                </div>
-            </div>
-            
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3">
-                    <label for="product_color" style="padding-top:12px; font-weight: normal" class="form-label">顏色 數量</label>
-                </div>
-                <div class="col-8" style="display: flex">
-                    <select class="form-select me-2" id="product_color" name="product_color">
-                        <option selected>--</option>
-                        <option value="same_color">同色</option>
-                        <option value="mixed_color">混搭</option>
-                    </select>
-                    <select class="form-select" id="quantity" name="quantity">
-                        <option selected>--</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3">
-                    <label for="note" style="padding-top:12px; font-weight: normal" class="form-label">備註</label>
-                </div>
-                <div class="col-8" style="display: flex">
-                    <input class="form-control" id="note" name="note" placeholder="Note" type="text">
-                </div>
-            </div>
-            <div class="mb-2 row mx-auto justify-content-center">
-                <div class="col-lg-2 col-3"></div>
-                <div class="col-8" style="display: flex">
-                    <button class="btn btn-block" type="submit" id="submitButton">訂購送出</button>
-                </div>
-            </div>
-        </div>
         <!-- 訂購須知-->
-        <div class="needtoknow mt-5">
+        <div class="needtoknow mt-2">
             <div class="row">
                 <div class="col-lg-5 offset-lg-1">
                     <span class="buytoknow">定購須知</span>
                         <ul class="buytoknw_detail">
-                            <li>由於花卉市場變動大，如遇花材缺貨，將以同性質花材製作，敬請理解見諒</li>
-                            <li>訂單送出後請先付款，取消訂購則不退款，未付款訂單只保留一天！</li>
+                            <li>訂單送出後須先付款，未付款訂單只保留一天！</li>
                             <li>付款後請Line官方帳號 or IG小盒子告知帳號末五碼，我們盡快回覆收款和出貨細節。</li>
+                            <li>取消訂購則不退款，請注意！</li>
                         </ul>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
@@ -562,7 +523,7 @@
         // 上傳資料
         google.script.run.addData(rowData);
         // 清除表單上的資料
-        document.getElementById("Product2_form").reset();
+        document.getElementById("Product1_form").reset();
         // 完成後的訊息
         alert("謝謝您的訂購，付完訂金請line官方帳號告知帳號末五碼，我們盡快回覆收款和出貨細節，若有急迫問題請來電，謝謝！");
     }
