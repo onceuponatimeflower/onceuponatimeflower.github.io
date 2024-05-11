@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden; /* 禁止左右滑动 */
+  }
+
+
+.navbar{
+background-color: rgba(255, 255, 255, 0);
+transition: background-color 0.3s ease; /* 添加過渡效果，時間為0.3秒，緩和效果為ease */
+}
+
+.navbar-brand{
+  margin-left: 10px;
+}
+
+/* 自訂導覽列樣式 */
+.navbar-collapse {
+  position: fixed;
+  top: 0;
+  right: -300px; /* 將right設為-300px，將其隱藏在右側 */
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(217, 217, 217, 0.7);
+  padding: 20px;
+  transition: right 0.3s ease; /* 添加位移的過渡效果 */
+  z-index: 100; /* 設定z-index，以免被其他元素遮擋 */
+}
+
+/* 當導覽列顯示時，將right設為0，使其從右側滑入 */
+.navbar-collapse.show {
+  right: 0;
+}
+
+/* 關閉按鈕的樣式 */
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: transform 0.5s; /* 添加旋轉的過渡效果，這裡改為0.5秒 */
+  z-index: 10000;
+}
+
+
+.navbar-nav li a {
+  position: relative;
+  color: rgb(78, 78, 78) !important;
+  font-size: 18px;
+  text-align: center;
+}
+
+.navbar-nav li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 50%; /* 設置初始時線的起始位置在中間 */
+  width: 10%; /* 設置初始寬度為10% */
+  height: 2px;
+  background-color: #e8d7d7;
+  transition: width 0.3s, left 0.3s; /* 添加寬度和左側位置變化的過渡效果 */
+  transform: translateX(-50%); /* 將線水平居中對齊連結文字 */
+}
+
+/* 滑鼠指到時讓線變長且左右平均擴展20% */
+.navbar-nav li a:hover::after {
+  width: 30%; /* 將線的寬度設置為30%以展開線的長度 */
+  
+}
+
+.navbar-toggler{
+  font-size:20px;
+  margin-top: 0px;
+  margin-right: 20px;
+  border: none; /* 移除按鈕的邊框 */
+  background-color: transparent; /* 設定按鈕的背景為透明 */
+  padding: 0; /* 移除按鈕的內邊距，讓按鈕沒有額外的空間 */
+}
+
+
+/* 以下 CSS 用於將 Instagram 和 Facebook 圖示顏色調整為黑色 */
+.header-social-area{
+  position: absolute;
+  right: 70px;
+  display: flex;
+  align-items: center;
+}
+
+
+.header-social-area a i {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 25px;
+}
+
+
+
+/* 調整導覽連結&文字的寬度和間距 */
+.nav-link {
+  padding: 25px 20px; /* 將左右內邊距減少為 25px，保持上下內 */
+}
+
+
+
+  /*
+@media (max-width:600px){
+  nav{
+      height:auto;
+  }
+  .nav-link {
+      padding:10px;
+  }
+}
+*/
+
+/* 幻燈片 小螢幕下 */
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* 幻燈片 大螢幕下 */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%);
+  }
+
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+/* 幻燈片下文字 */
+.slide-content{
+  overflow: hidden; /* 防止内容溢出 */
+  position: relative;
+  height: 100%; /* 确保容器填满高度 */
+}
+
+
+.caption-text{
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.slide-content:hover .caption-text{
+  transform: translateY(-250%); /* 将文字上提 35 像素 */
+  transition: transform 0.8s ease; /* 添加过渡效果，使过渡更平滑 */
+}
+
+.caption-text-detail{
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+  font-size: 16px;
+  font-weight: normal;
+  padding-inline :10px;
+}
+
+.slide-content:hover .caption-text-detail{
+  transform: translateY(-200%); /* 将文字上提 35 像素 */
+  transition: transform 1s ease; /* 添加过渡效果，使过渡更平滑 */
+}
+
+
+
+.core{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.core_tital{
+  color: rgb(102, 93, 84);
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-underline-offset: 5px; /* 調整底線與文字之間的距離 */
+  text-decoration-thickness: 2px; /* 指定底線的粗細 */
+  font-weight: normal;
+}
+
+.core_detail{
+  color: rgb(79, 72, 65);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.information_1{
+  padding-top:50px;
+}
+
+.information_1, .information_2{
+  overflow-x: hidden; /* 禁止左右滑动 */
+  padding-left: 50px;
+}
+
+
+.contact, .location, .service, .support {
+  color: rgb(66, 61, 56);
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom:10px;
+}
+.contact_detail, .location_detail, .service_detail, .support_detail{
+  color: rgb(66, 61, 56);
+  font-size: 15px;
+  margin-top: -5px;
+  font-weight: normal;
+}
+
+.footer {
+  padding-top: 50px;
+  text-align: center;
+  color: rgb(92, 86, 78);
+  font-size: 13px;
+}
+
+.back-top {
+  z-index: 99999;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  border: 1px rgba(255, 255, 255, 0.6) solid;
+  box-shadow: 0px 0px 3px #ffffff;
+  transition: all 0.2s linear;
+  background: url(https://drive.google.com/thumbnail?id=1w3h5y6LGcV2cvx81ztai4gOzSKZ5K6Fs&sz=s4000) center no-repeat;
+  background-size: 40px 40px;
+}
+
+.back-top:hover {
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+    box-shadow: 0px 0px 6px #ffffff;
+}
+
+.back-top.hide {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transform: translateY(150%);
+}
