@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas 商品介紹</title>
+    <style>
+        /* 設定頁面樣式 */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* 背景圖片容器 */
+        .background {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* 背景圖片樣式 */
+        .background img {
+            width: 100%; /* 寬度佔滿螢幕 */
+            height: auto; /* 高度自動適應，保持比例 */
+            display: block; /* 清除下方空白間隙 */
+        }
+
+        /* 商品介紹區塊樣式 */
+        .item {
+            position: absolute;
+            color: #fff;
+            background-color: rgba(203, 203, 203, 0.1); /* 背景半透明 */
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-align: center;
+            width: 300px;
+        }
+
+        /* 商品介紹區塊 hover 效果 */
+        .item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #000;
+        }
+
+        /* 預設大螢幕 */
+        .item1 {
+                top: 24%;
+                left: 52%;
+            }
+
+            .item2 {
+                top: 66%;
+                left: 51%;
+            }
+
+            .item3 {
+                top: 96.5%;
+                left: -2%;
+            }
+
+            .item4 {
+                top: 96.5%;
+                left: 53%;
+            }
+
+        /* 中型螢幕(平板) */
+        @media (max-width: 1024px) {
+            .item {
+                padding: 20px;
+                font-size: 10px;
+                width: 230px; /* 調整寬度適應小螢幕 */
+            }
+
+            .item1 {
+                top: 24%;
+                left: 52%;
+            }
+
+            .item2 {
+                top: 66%;
+                left: 51%;
+            }
+
+            .item3 {
+                top: 96.5%;
+                left: -2%;
+            }
+
+            .item4 {
+                top: 96.5%;
+                left: 53%;
+            }
+        }
+
+        /* 小型螢幕（手機） */
+        @media (max-width: 768px) {
+            /* 商品介紹區塊的樣式 */
+            .item {
+                padding: 15px;
+                font-size: 10px;
+                width: 150px; /* 調整寬度適應小螢幕 */
+            }
+
+            .item1 {
+                top: 24%;
+                left: 52%;
+            }
+
+            .item2 {
+                top: 66%;
+                left: 51%;
+            }
+
+            .item3 {
+                top: 96.5%;
+                left: -2%;
+            }
+
+            .item4 {
+                top: 96.5%;
+                left: 53%;
+            }
+        }
+
+        /* 特別小型螢幕（非常小的手機） */
+        @media (max-width: 480px) {
+            .item {
+                padding: 10px;
+                font-size: 10px;
+                width: 100px; /* 調整寬度適應小螢幕 */
+            }
+
+            .item1 {
+                top: 24%;
+                left: 52%;
+            }
+
+            .item2 {
+                top: 66%;
+                left: 51%;
+            }
+
+            .item3 {
+                top: 96.5%;
+                left: -2%;
+            }
+
+            .item4 {
+                top: 96.5%;
+                left: 53%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景圖片 -->
+    <div class="background">
+        <img src="IMG/HomePage.png" alt="商品背景">
+        
+        <!-- 桌上置物聖誕小樹 -->
+        <a href="https://onceuponatimeflower.github.io/Christmas/smalltree.html" target="_blank" class="item item1">
+        </a>
+
+        <!-- 聖誕抱抱桶 -->
+        <a href="https://onceuponatimeflower.github.io/Christmas/tree.html" target="_blank" class="item item2">
+        </a>
+
+        <!-- 聖誕花圈 -->
+        <a href="https://onceuponatimeflower.github.io/Christmas/wreath.html" target="_blank" class="item item3">
+        </a>
+
+        <!-- 聖誕玻璃鈴鐺掛飾 -->
+        <a href="https://onceuponatimeflower.github.io/Christmas/pendant.html" target="_blank" class="item item4">
+        </a>
+    </div>
+</body>
+</html>
