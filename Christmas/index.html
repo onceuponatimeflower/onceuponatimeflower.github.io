@@ -33,126 +33,159 @@
         .item {
             position: absolute;
             color: #fff;
-            background-color: rgba(203, 203, 203, 0.1); /* 背景半透明 */
-            padding: 25px;
+            background-color: rgba(255, 255, 255, 0); /* 背景半透明 */
+            padding: 305px;
             border-radius: 8px;
             font-size: 14px;
             text-align: center;
-            width: 300px;
         }
 
         /* 商品介紹區塊 hover 效果 */
         .item:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
             color: #000;
+        }
+
+        .block {
+            position: absolute;
+            top: 55%;
+            left: 4%;
+            padding: 100px;
+            background-color: rgb(212, 208, 200);
+            width: 10%;
         }
 
         /* 預設大螢幕 */
         .item1 {
-                top: 24%;
-                left: 52%;
-            }
-
-            .item2 {
-                top: 66%;
+                top: 0%;
                 left: 51%;
             }
 
+            .item2 {
+                top: 27.3%;
+                left: 51%;
+                padding: 472px;
+            }
+
             .item3 {
-                top: 96.5%;
-                left: -2%;
+                top: 69.5%;
+                left: -4.5%;
+                padding: 350px;
             }
 
             .item4 {
-                top: 96.5%;
-                left: 53%;
+                top: 69.5%;
+                left: 51%;
+                padding: 350px;
             }
 
         /* 中型螢幕(平板) */
         @media (max-width: 1024px) {
             .item {
-                padding: 20px;
+                padding: 218px;
                 font-size: 10px;
                 width: 230px; /* 調整寬度適應小螢幕 */
             }
 
             .item1 {
-                top: 24%;
-                left: 52%;
-            }
-
-            .item2 {
-                top: 66%;
+                top: 0%;
                 left: 51%;
             }
 
+            .item2 {
+                top: 27.3%;
+                left: 51%;
+                padding: 337px;
+            }
+
             .item3 {
-                top: 96.5%;
-                left: -2%;
+                top: 69.5%;
+                left: -4.5%;
+                padding: 350px;
             }
 
             .item4 {
-                top: 96.5%;
-                left: 53%;
+                top: 69.5%;
+                left: 51%;
+                padding: 350px;
             }
+            .block {
+            padding: 80px;
+            }
+
         }
 
         /* 小型螢幕（手機） */
         @media (max-width: 768px) {
             /* 商品介紹區塊的樣式 */
             .item {
-                padding: 15px;
+                padding: 154.5px;
                 font-size: 10px;
                 width: 150px; /* 調整寬度適應小螢幕 */
             }
 
             .item1 {
-                top: 24%;
-                left: 52%;
-            }
-
-            .item2 {
-                top: 66%;
+                top: 0%;
                 left: 51%;
             }
 
+            .item2 {
+                top: 27.3%;
+                left: 51%;
+                padding: 237px;
+            }
+
             .item3 {
-                top: 96.5%;
-                left: -2%;
+                top: 69.5%;
+                left: -4.5%;
+                padding: 350px;
             }
 
             .item4 {
-                top: 96.5%;
-                left: 53%;
+                top: 69.5%;
+                left: 51%;
+                padding: 350px;
             }
+
+            .block {
+            padding: 55px;
+            }
+
         }
 
         /* 特別小型螢幕（非常小的手機） */
         @media (max-width: 480px) {
             .item {
-                padding: 10px;
+                padding: 104.4px;
                 font-size: 10px;
                 width: 100px; /* 調整寬度適應小螢幕 */
             }
 
             .item1 {
-                top: 24%;
-                left: 52%;
-            }
-
-            .item2 {
-                top: 66%;
+                top: 0%;
                 left: 51%;
             }
 
+            .item2 {
+                top: 27.3%;
+                left: 51%;
+                padding: 161.5px;
+            }
+
             .item3 {
-                top: 96.5%;
-                left: -2%;
+                top: 69.5%;
+                left: -4.5%;
+                padding: 350px;
             }
 
             .item4 {
-                top: 96.5%;
-                left: 53%;
+                top: 69.5%;
+                left: 51%;
+                padding: 350px;
+            }
+
+            .block {
+            padding: 30px;
             }
         }
     </style>
@@ -177,6 +210,7 @@
         <!-- 聖誕玻璃鈴鐺掛飾 -->
         <a href="https://onceuponatimeflower.github.io/Christmas/pendant.html" target="_blank" class="item item4">
         </a>
+        <p class="block"></p>
     </div>
 </body>
 </html>
